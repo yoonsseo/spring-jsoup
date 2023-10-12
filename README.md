@@ -9,3 +9,15 @@
 #### 스크래핑(Scraping)
 * **특정 웹 페이지에서 데이터를 추출하는 것**
 * ex. 특정 주제의 뉴스만 가져오기, 인기 검색어 정보 가져오기, 어떤 상품의 가격 모니터링
+
+
+## Jsoup 라이브러리
+**HTML을 파싱해주는 Java 오픈소스 라이브러리**  
+
+**정적인 웹 페이지** 스크래핑에 사용되며, 웹 브라우저를 사용하지 않고도 HTML 문서를 파싱할 수 있다
+#### Jsoup 주요 타입
+1. `Connection` : 연결을 하기 위한 정보(ex. URL)를 담고, 웹에서 content를 가져와 document로 파싱한다 
+2. `Document` : Jsoup을 이용해 얻어온 결과로, URL과 연결해서 얻어온 HTML 전체 문서
+3. `Elements` : Element가 모인 자료형으로, 반복문 사용이 가능하다
+4. `Element` : Document의 HTML 요소
+5. `Response` : Jsoup가 URL에 접속해 얻어온 결과. Document와 다르게 status 코드, status 메시지나 charset같은 헤더 메시지와 쿠키등을 가지고 있다.
